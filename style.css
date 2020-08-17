@@ -1,0 +1,357 @@
+/* width */
+::-webkit-scrollbar {
+width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 3px white;
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #f2f2f2;
+border-radius: 10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #FCAC48;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 60px;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  text-decoration: underline;
+  /* margin-top: 0.5vh; */
+
+  /* quirky add on */
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.intro-image {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.intro-image img {
+  width: 700px;
+  height: 600px;
+  float: left;
+}
+
+.intro-text {
+  float: right;
+  color: #000000;
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 800px;
+  /* margin-top: 40px; */
+  margin-bottom: 300px;
+  font-size: 24px;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+.headline {
+  margin-top: 4vw;
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+.name {
+  margin-top: 30px;
+  width: 60vw;
+  height: 20vw;
+  border-radius: 15px;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+.email {
+  margin-top: 30px;
+  width: 60vw;
+  height: 20vw;
+  border-radius: 15px;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+.password {
+  margin-top: 20px;
+  width: 60vw;
+  height: 20vw;
+  border-radius: 15px;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+.signup-button {
+  margin-top: 20px;
+  width: 60vw;
+  height: 20vw;
+  border-radius: 15px;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+/* Signup Form */
+
+.title {
+  text-align: center;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  font-weight: bold;
+  font-size: 3em;
+  color: #39CEAF;
+  font-family: 'Comfortaa', Arial, display;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #39CEAF; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/*
+input[type=checkbox] {
+  position: relative;
+  cursor: pointer;
+  border: 1.5vh solid #39CEAF;
+  color: #39CEAF;
+} 
+*/
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border: 1px solid #39CEAF;
+  border-radius: 20%;
+}
+
+/* not working for some reason */
+
+.checkbox-text {
+  font-size: 4vw;
+  font-family: 'Comfortaa', Arial, display;
+  color: #39CEAF;
+}
+
+/* On mouse-over, add a grey background color */
+/*
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+*/
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #FCAC48;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  border-color: #39CEAF;
+  /* color: rgb(103, 185, 169); */
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  /*background-color:  #FCAC48;*/
+}
+
+/* Add a background color and some padding around the form */
+/*.topnav {
+  margin-top: 2vh;
+  text-align: center;
+  margin: auto;
+  width: 30vw;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px; 
+}
+*/
+
+.login {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.signup {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.basic-info {
+  margin-left: 40%;
+  margin-right: 40%;
+}
+
+.space {
+  size: 10px;
+}
+
+label {
+  font-family: 'Comfortaa', Arial, display;
+  color: #39CEAF;
+}
+
+.about {
+  font-family: 'Comfortaa', Arial, display;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.567em;
+  margin-left: 
+}
+
+.desc {
+  font-size: 1.125rem;
+  line-height: 1.61111em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #33475b;
+  font-family: "AvenirNext","Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*
+  font-family: 'Comfortaa', Arial, display;
+  font-size: 2em; */
+}
+
+/* .logo {
+  margin-right: 89vw;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+} */
+
+
+.logo { 
+  float: left; 
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  margin-left: 5vw;
+  margin-top: -0.2vw;
+}
+
+.nav { 
+  float: right; 
+  width: 600px;
+}
+
+/* on home screen */
+
+
+
+.intro {
+  margin-top: 10vh;
+  font-family: 'Comfortaa', Arial, display;
+  color: #39CEAF;
+  margin-left: 13vw;
+  font-size: 1.5em;
+}
+
+.enter {
+  margin-top: 8vh;
+  margin-left: 13vw;
+  margin-right: 14vw;
+}
+
+/* 3 second loading delay */
+.landing-image {
+  margin-left: 8vw;
+  width: 43vw;
+  height: 80vh;
+}
+
+.login-wrap {
+  display: flex;
+}
+
+.left-login-screen {
+  float: right;
+}
+
+.right-login-screen {
+  float: left;
+}
