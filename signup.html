@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>FuseBloom MVP</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+
+  <!-- Two Options: Signup and Signin -->
+
+  <!-- Add in Form Functionality -->
+  <!-- Link to a back end database -->
+
+      <div class="topnav">
+      <ul class="logo">
+        <a href="index.html">
+          <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQGp3kFaDPP6GQ/company-logo_200_200/0?e=1604534400&v=beta&t=e2fWm215gR8fKkzESKf0qzQS8sNCU82Vh3szkm-qLm4" alt="FuseBloom logo" class="logo"/>
+        </a>
+      </ul>
+      <ul class="nav">
+        <a href="about.html">About</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+        <a href="index.html">Home</a>
+      </ul>
+      <div style="clear: both"></div>
+    </div>
+
+      <div class="title">Signup</div>
+      
+      <form class="signup" action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <!-- Create a checker to make sure input fields only take in #'s -->
+
+        <label for="age">Age</label>
+        <select id="age" name="age">
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+        </select>
+
+        <label for="grade">Grade</label>
+        <select id="grade" name="grade">
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+
+        <label for="highschool">High School</label>
+        <input type="text" id="highschool" name="highschool" placeholder="Your high school..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <!-- <option value="australia">Australia</option>
+          <option value="canada">Canada</option> --> 
+          <option value="usa">USA</option>
+        </select> 
+
+        <!-- Make state OPTIONAL if from country outside US -->
+
+        <!-- Select - drop down bar for state and country -->
+
+        <label for="state">State</label>
+        <select id="state" name="state">
+            <option value="massachusetts">Massachusetts</option>
+        </select>
+
+        <!-- Tag system for Interests --> 
+
+
+        <!-- The action attribute defines the action to be performed when the form is submitted. Usually, the form data is sent to a page on the server when the user clicks on the submit button. In the example above, the form data is sent to a page on the server called "/action_page.php". -->
+
+        <!-- chanage action_page.php to the name of the right page on server that will process user data. -->
+        
+        
+        <label for="interests">Interests</label><br>
+
+        <h3></h3>
+
+        <form action="/action_page.php" method="get">
+            <!-- <input type="checkbox" name="business" value="Business"
+            <label for="business">Business</label><br>
+            <input type="checkbox" name="science" value="Science"
+            <label for="science">Science</label><br>
+            <input type="checkbox" name="coding" value="Coding"
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" name="engineering" value="Engineering"
+            <label for="engineering">Engineering</label><br>
+            <input type="checkbox" name="math" value="Math"
+            <label for="math">Math</label><br>
+            <input type="checkbox" name="civics" value="Civics"
+            <label for="civics">Civics</label><br>
+            <input type="checkbox" name="music" value="Music"
+            <label for="music">Music</label><br>
+            <input type="checkbox" name="art" value="Art"
+            <label for="art">Art</label><br>
+            <input type="checkbox" name="journalism" value="Journalism"
+            <label for="journalism">Journalism</label><br>
+            <input type="checkbox" name="law" value="Law"
+            <label for="law">Law</label><br> -->
+
+        <label class="container"><div class"checkbox-text">Business</div>
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Science</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Engineering</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Civics</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Music</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Art</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Math</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Coding</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Journalism</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="container"><div class"checkbox-text">Law</div>
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        </form>
+         
+       
+
+        <h1></h1>
+
+        <div class="basic-info">
+
+          <label for="uname">Username</label>
+          <input type="text" id="uname" name="username" placeholder="Username">
+
+          <label for="pword">Password</label>
+          <input type="text" id="pword" name="password" placeholder="Password">
+
+        </div>
+
+        <h1></h1>
+
+
+        <!-- <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea> -->
+
+        <center><input type="submit" value="Submit"></center>
+
+        <p class="space"></p>
+
+        <!-- Add JS to fully submit the form -->
+        <!-- Where is the form going to be submitted to? -->
+
+      </form>
+    
+
+    <!-- Action Attribute: says where the form data is to be sent to a server via a URL after the form is submitted -->
+
+    
+
+    <!-- One "tab" for each step in the form: -->
+
+    <!-- oninput executes Javascript code when a user writes something in an <input> field -->
+
+    <!-- Create a checker to make sure input fields only take in #'s -->
+
+    <!-- overflow property clips content or adds a scrollbar when it is too big to fit the screen -->
+
+    
+
+    <!-- 3 types of buttons -->
+    <!-- Submit - submits the form data -->
+    <!-- Reset - resets form data -->
+    <!-- button - just a button -->
+
+  
+    <!-- logo to top left --->
+
+    <!-- welcome screen --->
+    <!-- sign up screen --->
+    <!-- sign in screen with user database --->
+    <!-- congratulations screen after sign in --->
+    <!-- internship recommendations screen --->
+    <!-- profile/saved internships screen --->
+    <!-- bonus: internship matchup screen --->
+  </body>
+</html>
